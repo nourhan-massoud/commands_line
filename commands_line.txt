@@ -1,0 +1,124 @@
+# commands line to remember it <3 =) :D
+##############################################################
+
+# to fetch and pull all pushed data without make commit .
+git fetch --all
+git reset --hard origin/branch_name
+git pull origin branch_name
+
+##############################################################
+
+# to blame file - and git who/when pushed this block of code !
+git log
+git log -- stat
+git blame file_name
+
+##############################################################
+
+# to make things you try to install it , 
+# install with spicific python version and install on os (system as all) .
+python (python V) -m pip install --user boto
+
+##############################################################
+
+# to get link of the repo you want to fetch/pull/clone it .
+git remote -v
+
+##############################################################
+
+# to open vs code as root
+sudo code --user-data-dir
+
+##############################################################
+
+# fot make git ignore some files with same extintion.
+git rm-f*.pyc*
+
+##############################################################
+
+# solve error path spec "branch name" did not match any files knowb to git .
+git fetch --all
+git checkout branch_name
+
+##############################################################
+
+# some pip commands i use it before
+pip install botocore
+pip install boto3
+pip install camlCase
+pip install freze
+pip install flask marshmallow
+pip install flask sql alchemy
+pip install flask restufl
+
+##############################################################
+
+# create a new repo to new project :
+echo "# commands_line" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nourhan-massoud/commands_line.git
+git push -u origin main
+
+##############################################################
+
+# push an existing repository from the command line :
+git remote add origin https://github.com/nourhan-massoud/commands_line.git
+git branch -M main
+git push -u origin main
+
+##############################################################
+
+# solve address already in use :
+sudo netstat -nlp|grep 5000 # after run this command , you will see number port run
+sudo kill -9 <#put here number>
+
+##############################################################
+
+# save all local changes 
+git stash
+
+##############################################################
+
+# remove files/folders untracked
+git clean -f -d #f mean files d mean directory
+git clean -fd
+
+##############################################################
+
+# if git ignore not working
+git rm -rf -- cached.
+git add.
+
+##############################################################
+
+# delete branch or rename it :
+git checkout old_branch_name
+git branch -m new_branch_name
+git push origin -u new_branch_name
+git push origin --delete old_branch_name
+
+##############################################################
+
+# update chrome :
+sudo apt-get--only-upgrade install google-chrome-stable
+
+##############################################################
+
+# search about worlds (like find in folder)
+grep -R 'WORD'.
+grep -iwrl 'WORD'.
+
+##############################################################
+
+# like ignore all already pushed in repo and push new things
+git push --force
+git push --f
+
+##############################################################
+
+# this will delete your preview commit(s) and push your current one .
+git push origin <'your_branch_name'> --force
+git push origin <'https://.....'> --force

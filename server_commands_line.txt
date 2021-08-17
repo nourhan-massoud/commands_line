@@ -1,0 +1,20 @@
+# docker commands line to remember it <3 =) :D
+##############################################################
+
+# to enter a server
+ssh root@fastplayapp.net
+
+# to enter to specific host on server
+ssh -i /home/mio/Downloads/classfit.pem specific_host_link_or_command
+
+# to change key file password permission
+# chmod 600 deployment_key_path.txt
+sudo chmod 600 /home/mio/Downloads/classfit.pem
+
+# go to specific directory to work on it
+cd /var/www/html/classfit
+
+# zip file on server , because not done in file zilla
+zip -r /home/fastplayapp/public_html/alpha/v2server/public/404ErrorZip.zip public/
+# zip -r (location to new zip folder)  (the target folder to compress).
+# example : zip -r /var/www/html/classfit/public/public.zip public/

@@ -1,0 +1,26 @@
+# docker commands line to remember it <3 =) :D
+##############################################################
+
+# to build image with current changes
+docker build -t repo_name:tag_name .
+
+# get all images id alraedy run and use last one of them
+docker images
+
+# link las image id with current changes with repo and tag name you need to push on it .
+docker tag_image id username/repo_name:tag_name
+
+# push all current change to specific repo and tag
+docker push username/repo_name:tag_name
+
+# push all current change to specific repo and this command will rplace all tags in this repo ,
+# with new changes
+docker push username/repo_name
+
+# to login in docker hub with personam username/password account
+docker login -e put_email -u put_username -p put_password
+
+# to run image like you will push in in local server
+docker run -p 127.0.0.1:8080:80 username/repo_name:tag_name
+# OR
+docker run -p 127.0.0.1:8080:80 last_image_id_pushed
