@@ -122,3 +122,12 @@ git push --f
 # this will delete your preview commit(s) and push your current one .
 git push origin <'your_branch_name'> --force
 git push origin <'https://.....'> --force
+
+##############################################################
+The files/folder in your version control will not just delete themselves just because you added them to the .gitignore. They are already in the repository and you have to remove them. You can just do that with this:
+Remember to commit everything you've changed before you do this!
+This removes all files from the repository and adds them back (this time respecting the rules in your .gitignore).
+
+git rm -rf --cached .
+git add .
+##############################################################
