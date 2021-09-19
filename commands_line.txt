@@ -137,3 +137,12 @@ git config --global user.name "your username"
 git config --global user.password "your password"
 
 git config --global credential.helper store
+
+##############################################################
+1 - Now clear the link to the ORI repository with the following command:
+git remote rm origin
+2 - Now link your local repository to your newly created NEW repository using the following command:
+git remote add origin <url to NEW repo>
+3 - Now push all your branches and tags with these commands:
+git push origin --all
+git push --tags
