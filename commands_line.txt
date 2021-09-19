@@ -131,3 +131,9 @@ This removes all files from the repository and adds them back (this time respect
 git rm -rf --cached .
 git add .
 ##############################################################
+Git save password global
+
+git config --global user.name "your username"
+git config --global user.password "your password"
+
+git config --global credential.helper store
