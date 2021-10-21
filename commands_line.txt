@@ -162,3 +162,7 @@ sudo apt-get install google-chrome-stable
 # Update
 
 sudo apt-get --only-upgrade install google-chrome-stable
+
+##############################################################
+Here --stat will display the number of insertions and deletions to each file altered by each commit.
+git log --stat
