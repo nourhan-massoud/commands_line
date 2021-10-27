@@ -166,3 +166,8 @@ sudo apt-get --only-upgrade install google-chrome-stable
 ##############################################################
 Here --stat will display the number of insertions and deletions to each file altered by each commit.
 git log --stat
+
+##############################################################
+Rollback
+# This will detach your HEAD, that is, leave you with no branch checked out:
+git checkout <commit id>
