@@ -8,6 +8,26 @@ git pull origin branch_name
 
 ##############################################################
 
+# git flow hotfix
+----------------
+git flow init
+
+git flow hotfix start hotfix_name
+git flow hotfix finish hotfix_name
+
+# gi flow feature 
+----------------
+git flow feature start feature_name
+git flow feature finish feature_name
+git flow feature finish -k feature_name .. finish feature without delete it from local and remote
+
+git flow feature publish MYFEATURE .. Share a feature branch
+
+merge master with feature 
+checkout to mater and merege with feature name
+
+##############################################################
+
 # to blame file - and git who/when pushed this block of code !
 git log
 git log -- stat
