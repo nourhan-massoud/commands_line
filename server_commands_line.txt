@@ -1,5 +1,11 @@
-# docker commands line to remember it <3 =) :D
+# server commands line to remember it <3 =) :D
 ##############################################################
+
+restart server when jobs not working :
+ssh -i "ec2.pem" ubuntu@ec2-3-23-106-192.us-east-2.compute.amazonaws.com
+sudo supervisorctl restart all
+sudo supervisorctl start all
+--------------------------------------------------------------------
 
 # to enter a server
 ssh root@fastplayapp.net
