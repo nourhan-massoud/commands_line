@@ -191,3 +191,15 @@ git log --stat
 Rollback
 # This will detach your HEAD, that is, leave you with no branch checked out:
 git checkout <commit id>
+
+##############################################################
+تثبيت PHP 8.1 بجانب 7.3
+bash
+su
+sudo add-apt-repository ppa:ondrej/php -y
+sudo apt update
+sudo apt install php8.1 php8.1-cli php8.1-mbstring php8.1-xml php8.1-curl php8.1-bcmath php8.1-zip unzip
+:small_blue_diamond: التبديل بين الإصدارات يدويًا
+bash
+do
+sudo update-alternatives --config php
